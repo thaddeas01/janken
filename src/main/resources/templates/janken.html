@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <h1>Janken Game!</h1>
+  <div th:if="${name}">
+    <p>Hi![[${name}]]</p>
+  </div>
+  <p><a href="/jankengame?param1=gu">グー</a>
+    <a href="/jankengame?param1=pa">パー</a>
+    <a href="/jankengame?param1=choki">チョキ</a>
+  </p>
+
+  <div th:if="${result}">
+    <p>あなたの手[[${myhand}]]</p>
+    <p>相手の手[[${comphand}]]</p>
+    <p>結果:[[${result}]]</p>
+  </div>
+</body>
+
+</html>
